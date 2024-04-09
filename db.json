@@ -1,0 +1,161 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "First Post",
+      "body": "Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": "2",
+      "title": "Second Post",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Dưỡng ẩm",
+      "image": "1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Nước cân bằng",
+      "image": "2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Mặt nạ",
+      "image": "3.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Serum",
+      "image": "4.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Dầu tẩy trang",
+      "image": "5.jpg"
+    }
+  ],
+  "products": [
+    {
+      "name": "Nước Cân Bằng Diếp Cá 1",
+      "price": "3333",
+      "image": "product15.jpg",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "image": "product16.jpg",
+      "category_id": 6,
+      "price": 15.99,
+      "name": "Nước Cân Bằng Trà Đen"
+    },
+    {
+      "id": "5",
+      "image": "product17.jpeg",
+      "category_id": 3,
+      "price": 25.99,
+      "name": "Nước Cân Bằng Trà Đen"
+    },
+    {
+      "id": "6",
+      "image": "product18.jpeg",
+      "category_id": 3,
+      "price": 22.99,
+      "name": "Gel Rửa Mặt Than Hoạt Tính"
+    },
+    {
+      "id": "7",
+      "image": "product19.jpg",
+      "category_id": 4,
+      "price": 35.99,
+      "name": "Sữa Rửa Mặt Trà Xanh & Bạc Hà  "
+    },
+    {
+      "id": "8",
+      "image": "product20.jpg",
+      "category_id": 4,
+      "price": 30.99,
+      "name": "Nước Tẩy Trang Trà Tràm"
+    },
+    {
+      "id": "9",
+      "image": "product21.jpg",
+      "category_id": 5,
+      "price": 28.99,
+      "name": "Dầu Tẩy Trang Nụ Tầm Xuân"
+    },
+    {
+      "id": "10",
+      "image": "product22.jpg",
+      "category_id": 5,
+      "price": 32.99,
+      "name": "Bột Chấm Mụn"
+    },
+    {
+      "id": "11",
+      "image": "product23.jpg",
+      "category_id": 6,
+      "price": 16.99,
+      "name": "Tinh Chất Retinol 0.25%"
+    },
+    {
+      "id": "12",
+      "image": "product24.jpg",
+      "category_id": 6,
+      "price": 19.99,
+      "name": "Tinh Chất Trà Xanh & Bạc Hà (BHA 2%)"
+    },
+    {
+      "name": "11111",
+      "price": "23234",
+      "image": "http://res.cloudinary.com/derz9qdf3/image/upload/v1708507339/Cloudinary-React/na1pmv5zvpignatriqj5.png",
+      "id": "435c"
+    }
+  ],
+  "carts": [],
+  "orders": [
+    {
+      "id": "0e15",
+      "firstname": "Tran",
+      "lastname": "Ngoc",
+      "address": "Thành phố Hồ Chí Minh",
+      "email": "ngoctranydk1211@gmail.com",
+      "phone_num": "0911474525",
+      "total_amout": "37.98",
+      "status": "đã giao"
+    },
+    {
+      "id": "bb73",
+      "firstname": "",
+      "lastname": "",
+      "address": "",
+      "email": "",
+      "phone_num": "",
+      "total_amout": "0",
+      "status": "đã giao"
+    },
+    {
+      "id": "f74f",
+      "firstname": "faweg",
+      "lastname": "ăegaw",
+      "address": "HCM",
+      "email": "trangiangzxc@gmail.com",
+      "phone_num": "0589317493",
+      "total_amout": "6666",
+      "status": "đang chờ xác nhận"
+    }
+  ]
+}

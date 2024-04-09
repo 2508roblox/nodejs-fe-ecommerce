@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@cloudinary/url-gen": "^1.16.1",
+    "json-server": "^1.0.0-alpha.21"
+  }
+}

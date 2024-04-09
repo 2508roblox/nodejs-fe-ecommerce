@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bông</title>
+    <!DOCTYPE html>
+    <html lang="en" data-bs-theme="light">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Home</title>
+        <script src="/cdn-cgi/apps/head/2oc_RD5SS6wgN5SiQnSEnWVNHg8.js"></script>
+        <link rel="icon" href="./assets/images/others/favicon.ico" />
+        <link rel="stylesheet" href="./assets/vendors/lightgallery/css/lightgallery-bundle.min.css" />
+        <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="./assets/vendors/animate/animate.min.css" />
+        <link rel="stylesheet" href="./assets/vendors/slick/slick.css" />
+        <link rel="stylesheet" href="./assets/vendors/mapbox-gl/mapbox-gl.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/theme.css" />
+        <script src="./assets/json_server_logic/home.js"></script>
+    </head>
+
+    <body>
+        <header id="header" class="header header-sticky header-sticky-smart disable-transition-all z-index-5">
+
+            <div class="sticky-area">
+                <div class="main-header nav navbar bg-body navbar-light navbar-expand-xl py-6 py-xl-0">
+                    <div class="container-wide container flex-nowrap">
+                        <div class="w-72px d-flex d-xl-none">
+                            <button class="navbar-toggler align-self-center border-0 shadow-none px-0 canvas-toggle p-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasNavBar" aria-controls="offCanvasNavBar" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="fs-24 toggle-icon"></span>
+                  </button>
+                        </div>
+                        <a href="./" class="navbar-brand px-8 py-4 mx-auto">
+                            <img class="light-mode-img" src="./assets/images/tran_logo.png" width="150" height="70" alt="Glowing - Bootstrap 5 HTML Templates" />
+                            <img class="dark-mode-img" src="./assets/images/tran_logo.png" width="179" alt="Glowing - Bootstrap 5 HTML Templates" /></a>
+                        <div class="d-none d-xl-flex w-xl-80" style="
+                margin-left: 10rem;
+            ">
+                            <ul class="navbar-nav">
+                                <li class="  transition-all-xl-1 py-xl-11 py-0 me-xxl-12 me-xl-10  ">
+                                    <a class="      d-flex justify-content-between position-relative py-xl-0 px-xl-0 text-uppercase fw-semibold ls-1 fs-15px fs-xl-14px dropdown-toggle" href="./index.html" id="menu-item-home">Trang chủ</a
+                      >
+                     
+                    </li>
+                    <li
+                      class="nav-item transition-all-xl-1 py-xl-11 py-0 me-xxl-12 me-xl-10 dropdown dropdown-hover dropdown-fullwidth position-static"
+                    >
+                      <a
+                        class="nav-link d-flex justify-content-between position-relative py-xl-0 px-xl-0 text-uppercase fw-semibold ls-1 fs-15px fs-xl-14px dropdown-toggle"
+                        href="./shop.html"
+                        id="menu-item-shop"
+                        >Cửa hàng</a
+                      >
+                    
+                    </li>
+                    <li
+                      class="nav-item transition-all-xl-1 py-xl-11 py-0 me-xxl-12 me-xl-10 dropdown dropdown-hover"
+                    >
+                      <a
+                        class="nav-link d-flex justify-content-between position-relative py-xl-0 px-xl-0 text-uppercase fw-semibold ls-1 fs-15px fs-xl-14px dropdown-toggle"
+                        href="#"
+                        data-bs-toggle="dropdown"
+                        id="menu-item-pages"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Giỏ hàng</a
+                      >
+                  
+                    </li>
+                  
+                  
+                  </ul>
+                </div>
+             
+                <div class="w-xl-50 d-flex align-items-center fs-28px">
+                  <div class="d-none d-xl-block w-60 ms-auto">
+                    <form
+                      action="#"
+                      method="get"
+                      class="search-box-1 form-border-transparent"
+                    >
+                      <div class="position-relative">
+                        <input
+                          type="text"
+                          name="s"
+                          class="form-control bg-body-secondary ps-12"
+                          placeholder="Tìm kiếm..."
+                        />
+                        <button
+                          class="position-absolute bg-transparent border-0 px-0 fs-4 ps-6 top-0 bottom-0 my-auto z-index-3 text-body-emphasis"
+                          type="submit"
+                        >
+                          <svg class="icon fs-18px mt-n3">
+                            <use xlink:href="#search"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="fs-28px text-body-emphasis d-block d-xl-none">
+                    <a
+                      class="lh-1 color-inherit text-decoration-none"
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#searchModal"
+                      aria-controls="searchModal"
+                      aria-expanded="false"
+                    >
+                      <svg class="icon icon-magnifying-glass-light">
+                        <use xlink:href="#icon-magnifying-glass-light"></use>
+                      </svg>
+                    </a>
+                        </div>
+                        <div class="color-modes position-relative ps-5 d-block d-xl-none">
+                            <a class="bd-theme btn btn-link nav-link dropdown-toggle d-inline-flex align-items-center justify-content-center text-primary p-0 position-relative rounded-circle" href="#" aria-expanded="true" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
+                                <svg class="bi my-1 theme-icon-active">
+                        <!-- <use href="#sun-fill"></use> -->
+                      </svg>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end fs-14px" data-bs-popper="static">
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                          <svg class="bi me-4 opacity-50 theme-icon">
+                            <use href="#sun-fill"></use>
+                          </svg>
+                          Light
+                          <svg class="bi ms-auto d-none">
+                            <use href="#check2"></use>
+                          </svg>
+                        </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                          <svg class="bi me-4 opacity-50 theme-icon">
+                            <use href="#moon-stars-fill"></use>
+                          </svg>
+                          Dark
+                          <svg class="bi ms-auto d-none">
+                            <use href="#check2"></use>
+                          </svg>
+                        </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                          <svg class="bi me-4 opacity-50 theme-icon">
+                            <use href="#circle-half"></use>
+                          </svg>
+                          Auto
+                          <svg class="bi ms-auto d-none">
+                            <use href="#check2"></use>
+                          </svg>
+                        </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <main id="content" class="wrapper layout-page">
+            <section>
+                <div class="row align-items-center hero hero-header-03 mx-0 bg-section-2">
+                    <div class="col-lg-6 order-1 order-lg-0 text-center py-lg-0 py-16 px-sm-0 px-6">
+                        <div data-animate="fadeInUp" class="fs-4 fw-semibold text-primary mb-8">
+                            The Perfect Skincare
+                        </div>
+                        <h2 data-animate="fadeInUp" class="mx-auto hero-540 fs-1 mb-4 px-4">
+                            GEL RỬA MẶT DIẾP CÁ
+                        </h2>
+                        <p data-animate="fadeInUp" class="mx-auto hero-desc fs-18px text-body-calculate">
+                            #cho da nhạy cảm
+                        </p>
+                        <a data-animate="fadeInUp" href="shop.html" class="btn btn-lg btn-dark mt-6 btn-hover-bg-primary btn-hover-border-primary">Mua ngay</a
+                >
+              </div>
+              <div class="col-lg-6 order-0 order-lg-1 px-0">
+                <div class="d-block hover-zoom-in hover-shine">
+                  <img
+                    src="https://templates.g5plus.net/glowing-bootstrap-5/assets/images/hero-slider/hero-slider-07.jpg"
+                    data-src="https://templates.g5plus.net/glowing-bootstrap-5/assets/images/hero-slider/hero-slider-07.jpg"
+                    class="  img-fluid w-100 vh-100 object-fit-cover"
+                    alt="slider"
+                    width="952"
+                    height="770"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="container container-xxl pt-14 pt-lg-17">
+            <div class="mb-lg-13 mb-7">
+              <div class="text-center">
+                <h2 class="mb-6">Danh mục</h2>
+              
+              </div>
+            </div>
+            <div class="row " id="category-container">
+                <!-- category -->
+             
+              
+            </div>
+          </section>
+          <!-- <section class="pt-lg-16 pt-14">
+            <div class="container container-xxl">
+              <div class="row gy-30px gx-30px">
+                <div class="col-12 col-md-4">
+                  <div
+                    class="card border-0 rounded-0 hover-zoom-in hover-shine"
+                  >
+                    <img
+                      class="lazy-image card-img object-fit-cover lazy-image light-mode-img"
+                      src="#"
+                      data-src="./assets/images/banner/banner-05.jpg"
+                      width="450"
+                      height="600"
+                      alt="Autumn Skincare"
+                    />
+                    <img
+                      class="lazy-image dark-mode-img card-img object-fit-cover lazy-image"
+                      src="#"
+                      data-src="./assets/images/banner/banner-white-05.jpg"
+                      width="450"
+                      height="600"
+                      alt="Autumn Skincare"
+                    />
+                    <div
+                      class="card-img-overlay d-inline-flex flex-column p-8 justify-content-end text-center"
+                    >
+                      <h3 class="card-title text-white lh-45px">
+                        Autumn Skincare
+                      </h3>
+                      <div>
+                        <a
+                          href="#"
+                          class="btn btn-link p-0 fw-semibold text-white text-decoration-none"
+                          >Disvover Now
+                          <svg class="icon">
+                            <use xlink:href="#icon-arrow-right"></use></svg
+                        ></a>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card border-0 rounded-0 hover-zoom-in hover-shine">
+                        <img class="lazy-image card-img object-fit-cover lazy-image" src="#" data-src="./assets/images/banner/banner-03.jpg" width="450" height="600" alt="Anti-aging Cream" />
+                        <div class="card-img-overlay d-inline-flex flex-column p-8 justify-content-end text-center">
+                            <h3 class="card-title text-white lh-45px">
+                                Anti-aging Cream
+                            </h3>
+                            <div>
+                                <a href="#" class="btn btn-link p-0 fw-semibold text-white text-decoration-none">Buy 1 get 1
+                          <svg class="icon">
+                            <use xlink:href="#icon-arrow-right"></use></svg
+                        ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card border-0 rounded-0 hover-zoom-in hover-shine">
+                        <img class="lazy-image card-img object-fit-cover lazy-image light-mode-img" src="#" data-src="./assets/images/banner/banner-04.jpg" width="450" height="600" alt="Sale Up To 40% Off" />
+                        <img class="lazy-image dark-mode-img card-img object-fit-cover lazy-image" src="#" data-src="./assets/images/banner/banner-white-04.jpg" width="450" height="600" alt="Sale Up To 40% Off" />
+                        <div class="card-img-overlay d-inline-flex flex-column p-8 justify-content-end text-center">
+                            <h3 class="card-title text-white lh-45px">
+                                Sale Up To 40% Off
+                            </h3>
+                            <div>
+                                <a href="#" class="btn btn-link p-0 fw-semibold text-white text-decoration-none">Shop Sale
+                          <svg class="icon">
+                            <use xlink:href="#icon-arrow-right"></use></svg
+                        ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </section> -->
+            <div class="mb-5">
+
+            </div>
+            <div class="container container-xxl">
+              <div class="row gy-30px gx-30px">
+              <div class="col-12 col-md-4">
+              <div class="card border-0 rounded-0 hover-zoom-in hover-shine">
+              <img class="lazy-image card-img object-fit-cover lazy-image light-mode-img" src="./assets/images/banner/banner-05.jpg" data-src="./assets/images/banner/banner-05.jpg" width="450" height="600" alt="Autumn Skincare" loading="lazy" data-ll-status="native">
+              <img class="dark-mode-img card-img object-fit-cover loaded" src="./assets/images/banner/banner-white-05.jpg" data-src="./assets/images/banner/banner-white-05.jpg" width="450" height="600" alt="Autumn Skincare" loading="lazy" data-ll-status="loaded"><div class="card-img-overlay d-inline-flex flex-column p-8 justify-content-end text-center"><h3 class="card-title text-white lh-45px">Autumn Skincare</h3><div><a href="#" class="btn btn-link p-0 fw-semibold text-white text-decoration-none">Disvover Now <svg class="icon"><use xlink:href="#icon-arrow-right"></use></svg></a></div>
+              </div>
+              </div>
+              </div>
+              <div class="col-12 col-md-4">
+              <div class="card border-0 rounded-0 hover-zoom-in hover-shine">
+              <img class="card-img object-fit-cover loaded" src="./assets/images/banner/banner-03.jpg" data-src="./assets/images/banner/banner-03.jpg" width="450" height="600" alt="Anti-aging Cream" loading="lazy" data-ll-status="loaded"><div class="card-img-overlay d-inline-flex flex-column p-8 justify-content-end text-center"><h3 class="card-title text-white lh-45px">Anti-aging Cream</h3><div><a href="#" class="btn btn-link p-0 fw-semibold text-white text-decoration-none">Buy 1 get 1 <svg class="icon"><use xlink:href="#icon-arrow-right"></use></svg></a></div>
+              </div>
+              </div>
+              </div>
+              <div class="col-12 col-md-4">
+              <div class="card border-0 rounded-0 hover-zoom-in hover-shine">
+              <img class="lazy-image card-img object-fit-cover lazy-image light-mode-img" src="./assets/images/banner/banner-04.jpg" data-src="./assets/images/banner/banner-04.jpg" width="450" height="600" alt="Sale Up To 40% Off" loading="lazy" data-ll-status="native">
+              <img class="dark-mode-img card-img object-fit-cover loaded" src="./assets/images/banner/banner-white-04.jpg" data-src="./assets/images/banner/banner-white-04.jpg" width="450" height="600" alt="Sale Up To 40% Off" loading="lazy" data-ll-status="loaded"><div class="card-img-overlay d-inline-flex flex-column p-8 justify-content-end text-center"><h3 class="card-title text-white lh-45px">Sale Up To 40% Off</h3><div><a href="#" class="btn btn-link p-0 fw-semibold text-white text-decoration-none">Shop Sale <svg class="icon"><use xlink:href="#icon-arrow-right"></use></svg></a></div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+            <section id="product_tabs">
+                <div class="container container-xxl pt-14 pt-lg-16 pb-15 pb-lg-20 mb-4" data-bs-toggle="tab-dropdown">
+                    <ul class="nav nav-tabs border-0 d-lg-flex justify-content-center mb-12 d-none" role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <h2 class="mb-0 px-2 mx-1">
+                                <button class="nav-link px-10 py-0 border-0 text-body-emphasis opacity-30" data-bs-toggle="tab" data-bs-target="#sale-tab-pane" type="button" role="tab" aria-controls="sale-tab-pane" aria-selected="false">
+                      Sản phẩm
+                    </button>
+                            </h2>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-tabs border-0 justify-content-center mb-12 d-flex d-lg-none py-2" role="tablist">
+                        <li class="nav-item me-4">
+                            <h3 class="mb-0">You are in</h3>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle text-body-emphasis text-decoration-none d-flex align-items-center h3 mb-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Best Sellers</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a
+                        class="dropdown-item m-0 h5 active"
+                        href="#"
+                        data-bs-toggle="tab"
+                        data-bs-target="#best-sellers-tab-pane"
+                        role="tab"
+                        aria-controls="best-sellers-tab-pane"
+                        aria-selected="true"
+                        >Best Sellers</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="dropdown-item m-0 h5"
+                        href="#"
+                        data-bs-toggle="tab"
+                        data-bs-target="#new-arrivals-tab-pane"
+                        role="tab"
+                        aria-controls="new-arrivals-tab-pane"
+                        aria-selected="false"
+                        >New Arrivals</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="dropdown-item m-0 h5"
+                        href="#"
+                        data-bs-toggle="tab"
+                        data-bs-target="#sale-tab-pane"
+                        role="tab"
+                        aria-controls="sale-tab-pane"
+                        aria-selected="false"
+                        >Sale</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="best-sellers-tab-pane"
+                  role="tabpanel"
+                  tabindex="0"
+                >
+                  <div class="row gy-50px" id="product-container">
+                    <!-- products -->
+                    
+                    
+                    
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="new-arrivals-tab-pane"
+                  role="tabpanel"
+                  tabindex="0"
+                >
+              
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="sale-tab-pane"
+                  role="tabpanel"
+                  tabindex="0"
+                >
+              
+                </div>
+              </div>
+              <div class="text-center mt-11 pt-3">
+                <a href="#" class="btn btn-outline-dark">Tất cả sản phẩm</a>
+                </div>
+                </div>
+            </section>
+
+
+
+        </main>
+        <!-- <footer class="pt-14 pt-lg-19 pb-16 footer bg-image" data-bg-src="./assets/images/background/bg-footer-01.jpg" style="background-image: url(&quot;./assets/images/background/bg-footer-01.jpg&quot;);">
+            <div class="container container-xxl pt-4">
+                <div class="row">
+                    <div class="col-lg-5 col-12 mb-13 mb-lg-0">
+                        <h3 class="mb-4 text-white">Emails.</h3>
+                        <p class="lh-2 text-white me-xl-24 mb-lg-11 mb-9">Enter your email below to be the first to know about new collections and product launches.</p>
+                        <form class="pe-xl-21">
+                            <div class="input-group position-relative">
+                                <input type="email" class="form-control rounded pe-15 py-5 border-0" placeholder="Your email">
+                                <button type="submit" class="btn fs-28px bg-transparent text-secondary position-absolute btn-custom px-8 z-index-5 h-100 lh-0">
+          <svg class="icon icon-long-arrow-right">
+          <use xlink:href="#icon-long-arrow-right"></use>
+          </svg>
+          </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg col-md-4 col-12 mb-11 mb-md-8 mb-lg-0 text-white">
+                        <h3 class="fs-5 mb-6 text-white">Company</h3>
+                        <p class="pe-xl-18 lh-2">
+                            Find a location nearest you. See <a class="text-white" href="#"><u class="fw-medium">Our Stores</u></a>
+                        </p>
+                        <p class="mb-0 lh-2"><strong class="">+391 (0)35 2568 4593</strong>
+                            <br> hello@domain.com
+                        </p>
+                    </div>
+                    <div class="col-lg col-md-4 col-12 mb-11 mb-lg-0 text-white">
+                        <h3 class="fs-5 mb-6 text-white">Useful links</h3>
+                        <ul class="list-unstyled mb-0 fw-medium ">
+                            <li class="pt-3 mb-4">
+                                <a href="#" title="New Products" class="text-white">New Products</a>
+                            </li>
+                            <li class="pt-3 mb-4">
+                                <a href="#" title="Best Sellers" class="text-white">Best Sellers</a>
+                            </li>
+                            <li class="pt-3 mb-4">
+                                <a href="#" title="Bundle &amp; Save" class="text-white">Bundle &amp; Save</a>
+                            </li>
+                            <li class="pt-3 mb-4">
+                                <a href="#" title="Online Gift Card" class="text-white">Online Gift Card</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg col-md-4 col-12 mb-11 mb-lg-0">
+                        <h3 class="fs-5 mb-6 text-white">Social Media</h3>
+                        <ul class="list-inline fs-5 mb-0">
+                            <li class="list-inline-item me-8">
+                                <a class="text-light" href="#">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-8">
+                                <a class="text-light" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-8">
+                                <a class="text-light" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="text-light" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-0 mt-lg-20 align-items-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <p class="mb-0 text-white">©Bông Con2023</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-8 text-md-end mt-7 mt-md-0">
+                        <img src="./assets/images/footer/img_1.png" data-src="./assets/images/footer/img_1.png" width="313" height="28" class="img-fluid loaded" alt="PayPal" loading="lazy" data-ll-status="loaded">
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="./assets/vendors/clipboard/clipboard.min.js"></script>
+        <script src="./assets/vendors/vanilla-lazyload/lazyload.min.js"></script>
+        <script src="./assets/vendors/waypoints/jquery.waypoints.min.js"></script>
+        <script src="./assets/vendors/lightgallery/lightgallery.min.js"></script>
+        <script src="./assets/vendors/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+        <script src="./assets/vendors/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+        <script src="./assets/vendors/lightgallery/plugins/video/lg-video.min.js"></script>
+        <script src="./assets/vendors/lightgallery/plugins/vimeoThumbnail/lg-vimeo-thumbnail.min.js"></script>
+        <script src="./assets/vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="./assets/vendors/slick/slick.min.js"></script>
+        <script src="./assets/vendors/gsap/gsap.min.js"></script>
+        <script src="./assets/vendors/gsap/ScrollToPlugin.min.js"></script>
+        <script src="./assets/vendors/gsap/ScrollTrigger.min.js"></script>
+        <script src="./assets/vendors/mapbox-gl/mapbox-gl.js"></script>
+        <script src="./assets/js/theme.min.js"></script>
+
+        <div id="searchModal" data-bs-scroll="false" class="offcanvas offcanvas-top" style="--bs-offcanvas-height: auto">
+            <div class="container-wide container-xxl">
+                <nav class="navbar navbar-expand-xl px-0 py-6 py-xl-12 row align-items-start">
+                    <div class="col-xl-3 d-flex justify-content-center justify-content-xl-start">
+                        <a href="./" class="navbar-brand py-4 d-lg-inline-block">
+                            <img src="./assets/images/tran_logo.png" height="26" alt="Glowing - Bootstrap 5 HTML Templates" />
+                        </a>
+                    </div>
+                    <div class="col-xl-6 d-flex justify-content-center">
+                        <form class="w-xl-100 w-sm-75 w-100 mt-6 mt-xl-0 px-6 px-xl-0">
+                            <div class="input-group mx-auto">
+                                <input type="text" class="form-control form-control bg-transparent border-primary" placeholder="Search product" />
+                                <div class="form-control-append position-absolute end-0 top-0 bottom-0 d-flex align-items-center">
+                                    <button class="input-group-text bg-transparent border-0 px-0 me-6" type="submit">
+                        <i class="far fa-search fs-5"></i>
+                      </button>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center mt-6">
+                                <p class="text-muted mb-0 mr-3">Popular Searches</p>
+                                <nav class="nav">
+                                    <a class="nav-link text-decoration-underline py-0 px-4" href="#">T-Shirt</a
+                      >
+                      <a
+                        class="nav-link text-decoration-underline py-0 px-4"
+                        href="#"
+                        >Blue</a
+                      >
+                      <a
+                        class="nav-link text-decoration-underline py-0 px-4"
+                        href="#"
+                        >Jacket</a
+                      >
+                    </nav>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="icons-actions col-xl-3 d-flex justify-content-end fs-28px text-body-emphasis"
+              >
+                <div class="px-5 d-none d-xl-inline-block">
+                  <a
+                    class="lh-1 color-inherit text-decoration-none"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signInModal"
+                  >
+                    <svg class="icon icon-user-light">
+                      <use xlink:href="#icon-user-light"></use>
+                    </svg>
+                  </a>
+                            </div>
+                            <div class="px-5 d-none d-xl-inline-block">
+                                <a class="position-relative lh-1 color-inherit text-decoration-none" href="./shop/wishlist.html">
+                                    <svg class="icon icon-star-light">
+                      <use xlink:href="#icon-star-light"></use>
+                    </svg>
+                                    <span class="badge bg-dark text-white position-absolute top-0 start-100 translate-middle mt-4 rounded-circle fs-13px p-0 square" style="--square-sizeChi tiết đơn hàngpan
+                    >
+                  </a>
+                </div>
+                <div class=" px-5 d-none d-xl-inline-block ">
+                  <a
+                    class="position-relative lh-1 color-inherit text-decoration-none "
+                    href="# "
+                    data-bs-toggle="offcanvas "
+                    data-bs-target="#shoppingCart "
+                    aria-controls="shoppingCart "
+                    aria-expanded="false "
+                  >
+                    <svg class="icon icon-star-light ">
+                      <use xlink:href="#icon-shopping-bag-open-light "></use>
+                    </svg>
+                    <span
+                      class="badge bg-dark text-white position-absolute top-0 start-100 translate-middle mt-4 rounded-circle fs-13px p-0 square "
+                      style="--square-size: 18px "
+                      ></span
+                    >
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div
+          id="shoppingCart "
+          data-bs-scroll="false "
+          class="offcanvas offcanvas-end "
+        >
+          <div class="offcanvas-header fs-4 ">
+            <h4 class="offcanvas-title fw-semibold ">Shopping Bag</h4>
+            <button
+              type="button "
+              class="btn-close btn-close-bg-none "
+              data-bs-dismiss="offcanvas "
+              aria-label="Close "
+            >
+              <i class="far fa-times "></i>
+            </button>
+          </div>
+       
+      </body>
+      
+    </html>
+  </head>
+  <body></body>
+</html>

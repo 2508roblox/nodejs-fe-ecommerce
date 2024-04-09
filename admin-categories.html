@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/assets/css/admin.css">
+<head>
+<script src="./assets/admin_logic/categories.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        
+        .sidebar {
+            width: 200px;
+            height: 100%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+      
+        
+        li:hover {
+            background-color: #bbb;
+        }
+        
+        .statistics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .stat-box {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .stat-box h3 {
+            margin-bottom: 10px;
+        }
+        
+        .statistics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .stat-box {
+            flex-basis: calc(33.333% - 20px);
+            width: 200px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .stat-box h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .stat-box p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <style>
+                #categoriesList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.deleteButton,
+.editButton {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.deleteButton:hover,
+.editButton:hover {
+  background-color: #d32f2f;
+}
+/* CSS cho modal */
+.modal {
+  display: none; /* Ẩn modal ban đầu */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CSS cho các phần tử trong modal */
+#categoryName,
+#categoryImage {
+  margin-bottom: 10px;
+}
+
+#categoryImage {
+  display: block;
+}
+
+button[type="submit"] {
+  padding: 8px 16px;
+}
+<style>
+.modal-content {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content input,
+.modal-content button {
+  margin-bottom: 10px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="file"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content .close {
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ 
+            </style>
+            <h2>Admin Dashboard</h2>
+            <link rel="stylesheet" href="./assets/css/admin.css">
+                <ul>
+                  <li><a href="./admin.html"><i class="fas fa-home"></i> Thống kê</a></li>
+                  <li><a href="./admin-categories.html"><i class="fas fa-users"></i> Danh mục</a></li>
+                  <li><a href="./admin-products.html"><i class="fas fa-box"></i> Sản phẩm</a></li>
+                  <li><a href="./admin-users.html"><i class="fas fa-users"></i> Người dùng</a></li>
+                  <li><a href="./admin-orders.html"><i class="fas fa-chart-bar"></i> Hóa đơn</a></li>
+                </ul>
+        </div>
+        <div class="content" id="content">
+            <h2>Danh mục sản phẩm</h2>
+            <button id="createButton" >Tạo mới</button>
+            <!-- modal -->
+            <div id="createCategoryModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Tạo danh mục</h2>
+                  <form id="createCategoryForm">
+                    <input type="text" id="categoryName" placeholder="Tên danh mục">
+                    <input type="file" id="categoryImage" accept="image/*">
+                    <button type="submit">Lưu</button>
+                  </form>
+                </div>
+              </div>
+              <!-- edit -->
+              <div id="editCategoryModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Chỉnh sửa danh mục</h2>
+                  <form id="editCategoryForm">
+                    <img src="" id="editImagePreview" width="200px" alt="">
+                    <br>
+
+                    <label for="editCategoryName">Tên danh mục:</label>
+                    <input type="text" id="editCategoryName" placeholder="Category Name">
+                  
+                    <br>
+                  
+                   
+                    <br>
+                  
+                    <button type="submit">Lưu</button>
+                  </form>
+                </div>
+              </div>
+              <style>
+                /* CSS cho modal như trước */
+
+.modal {
+  /* CSS cho modal như trước */
+}
+
+.modal-content {
+  /* CSS cho modal như trước */
+}
+
+/* CSS cho các phần tử trong modal như trước */
+
+/* CSS mới cho nút "Edit" */
+#editButton {
+  margin-bottom: 10px;
+  padding: 8px 16px;
+}
+              </style>
+            <div id="categoriesList"></div>
+          </div>
+    </div>
+  
+   
+</body>
+
+</html>
